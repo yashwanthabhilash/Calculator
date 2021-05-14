@@ -1,0 +1,7 @@
+#ifndef SUBTRACTION_H_INCLUDED
+#define SUBTRACTION_H_INCLUDED
+
+void subtraction();
+
+#endif // SUBTRACTION_H_INCLUDED
+
