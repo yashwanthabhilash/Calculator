@@ -33,7 +33,7 @@ endif
 
 all:$(BUILD_DIR)
 # Compile the code and generate the ELF file
-      gcc $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).exe)
+	gcc $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).exe)
 
 $(BUILD_DIR):
 # Create directory to store the built files

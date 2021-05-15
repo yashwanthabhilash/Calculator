@@ -15,6 +15,12 @@ void menu()
     scanf("%d", &choice);
     
     int x, y;
+
+    if (choice<0 || choice>4)
+    {
+        printf("You have entered a wrong input, try again!!!");
+        menu();
+    }
     
     if(choice != 0)
     {
@@ -25,6 +31,8 @@ void menu()
     printf("Y >>> ");
     scanf(" %d", &y);
     }
+
+    
     
     switch (choice)
     {
@@ -40,13 +48,9 @@ void menu()
     case 4:
         division(x, y);
         break;
-    // case 0:
-    //     exit:
-    //     break;
-
-    default:
-        printf("You have entered a wrong input, try again!!!");
-        menu(choice);
+    case 0:
+        exit(0);
         break;
     }
+
 }
