@@ -3,11 +3,11 @@ PROJ_NAME = Blinky
 BUILD_DIR = Build
 
 # All Source code files
-SRC = project_main.c\
-src/user_utils.c
+SRC = main.c\
+src/menu.c src/addition.c src/subtraction.c src/multiplication.c src/division.c
 
 # All header file paths
-INC = -I inc
+INC = -I obj
 
 # Find out the OS and configure the variables accordingly
 ifdef OS	# All configurations for Windwos OS
